@@ -1,0 +1,98 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:background="#FFF" android:id="@+id/tableLayout" android:shrinkColumns="1,2"
+    android:stretchColumns="1,2" android:padding="5dp">
+
+    <!-- tableRow1 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow1"
+        android:layout_marginTop="24dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/monthly_payment"
+            android:id="@+id/lblMonthlyPayment"
+            android:gravity="right" android:paddingRight="5dp"
+            android:layout_span="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtMonthlyPayment"
+            android:layout_span="1"/>
+
+        <TextView android:id="@+id/lblMonthlyPaymentDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_symbol"
+            android:layout_span="1"/>
+    </TableRow>
+
+
+    <!-- tableRow2 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow2"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/total_payment"
+            android:id="@+id/lblTotalPayment"
+            android:gravity="right" android:paddingRight="5dp"
+            android:layout_span="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtTotalPayment"
+            android:layout_span="1"/>
+
+        <TextView android:id="@+id/lblTotalPaymentDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dollar_symbol"
+            android:layout_span="1"/>
+    </TableRow>
+
+    <!-- tableRow3 -->
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:id="@+id/tableRow3"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/payoff_date"
+            android:id="@+id/lblPayoffDate"
+            android:gravity="right" android:paddingRight="5dp"
+            android:layout_span="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtPayoffDate"
+            android:layout_span="1"/>
+
+        <TextView
+            android:layout_span="1"/>
+
+    </TableRow>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:id="@+id/btnBack"
+        android:gravity="center"
+        android:layout_marginTop="40dp" />
+
+
+</TableLayout>
+
+
